@@ -1,0 +1,7 @@
+{
+    "role": "RANK NAME HERE",
+    "requiredRank": 5,
+    "botName": "MEE6",
+    "token": "BOT TOKEN HERE",
+    "messageFormat": "GG <@{user_id}> , you just advanced to level {rank}!"
+}
