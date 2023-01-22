@@ -1,5 +1,5 @@
 # MEE6 rank based role bot
-Assigns a role to a user based on their MEE6 rank. Relies on the message that MEE6 sends when a user ranks up
+Assigns a role to a user based on their MEE6 level. Relies on the message that MEE6 sends when a user levels up
 
 ## Usage
 First install dependencies:

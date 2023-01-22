@@ -26,16 +26,16 @@ client.on("messageCreate", (msg) => {
 
     const member = msg.mentions.members.first();
 
-    const indexOfRank = config.messageFormat.split(' ').indexOf('{rank}');
+    const indexOfLevel = config.messageFormat.split(' ').indexOf('{level}');
 
-    const matchCommand = config.messageFormat.replace('{user_id}', member.user.id).replace('{rank}', config.requiredRank.toString());
+    const matchCommand = config.messageFormat.replace('{user_id}', member.user.id).replace('{level}', config.requiredLevel.toString());
     
     if (msg.content.startsWith(matchCommand)) {
         const splitMsg = msg.content.split(' ');
-        const rankString = splitMsg[indexOfRank];
-        const rank = parseInt(rankString);
+        const levelString = splitMsg[indexOfLevel];
+        const level = parseInt(levelString);
 
-        if (rank < config.requiredRank) return;
+        if (level < config.requiredLevel) return;
 
         let role = msg.guild.roles.cache.find(r => r.name === config.role);
 
